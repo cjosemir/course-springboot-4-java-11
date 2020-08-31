@@ -89,6 +89,10 @@ public class OrderItem implements Serializable{
 		return true;
 	}
 
+	public Double getSubTotal() {
+		return quantity * price;
+	}
+	
 	@Override
 	public String toString() {
 		return "OrderItem [id=" + id + ", quantity=" + quantity + ", price=" + price + "]";
